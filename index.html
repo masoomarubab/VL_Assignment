@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculator</title>
+   <!-- Bootstrap link -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- StyleSheet -->
+   <link rel="stylesheet" href="styles.css">
+   <!-- Font Family -->
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main w-50">
+        <h1 class="text-white heading">Calculator</h1>
+        <div class="output w-75 pl-3 pr-3"></div>
+        <div class="keypad w-75 pl-3 pr-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-3 mb-1" value="9">9</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-3 mb-1" value="8">8</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-3 mb-1" value="7">7</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-3 mb-1 del" value='del'>DEL</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="4">4</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="5">5</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="6">6</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="+">+</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="1">1</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="2">2</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="3">3</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value ="-">-</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value='.'>.</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="0">0</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="/">/</button></div>
+                    <div class="col-3"><button class="btn btn-dark w-100 mt-2 mb-1" value="*">*</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6"><button class="btn btn-danger w-100 mt-2 mb-3" value ='reset'>RESET</button></div>
+                    <div class="col-6"><button class="btn btn-info w-100 mt-2 mb-3" value='='>=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
